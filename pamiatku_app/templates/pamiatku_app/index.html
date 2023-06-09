@@ -1,0 +1,13 @@
+<p>Пам'ятки: </p>
+
+<ul>
+    {% for title in titles %}
+        <li>
+            <strong>Назва:</strong> {{ title.title }}<br>
+            <strong>Опис:</strong> {{ title.description }}
+            <hr>
+        </li>
+    {% empty %}
+        <li>Теми ще не додані</li>
+    {% endfor %}
+</ul>
